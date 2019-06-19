@@ -30,9 +30,9 @@ function requestApi(method, url) {
 
 		output.results.forEach(function(item, i, array){
 			let nameItem = item.name || item.title,
-				dateItem = item.first_air_date || item.release_date;
+					dateItem = item.first_air_date || item.release_date;
 
-			inner += `<div class="col-12 col-md-4 col-xl-3">${nameItem} (${da})</div>`;
+			inner += `<div class="col-12 col-md-4 col-xl-3">${nameItem} (${dateItem})</div>`;
 		});
 
 		movie.innerHTML = inner;
