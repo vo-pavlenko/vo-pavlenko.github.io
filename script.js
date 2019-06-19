@@ -29,7 +29,7 @@ function requestApi(method, url) {
 		let inner = ''
 
 		output.results.forEach(function(item, i, array){
-			let nameItem = item.name || item.title,
+			let nameItem = item.name || item.title;
 			inner += `<div class="col-12 col-md-4 col-xl-3">${nameItem}</div>`;
 		});
 
