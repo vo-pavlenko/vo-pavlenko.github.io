@@ -82,6 +82,7 @@
 .form__search__input {
 	width: 120px;
 	padding: 4px 0 4px 4px;
+	border-radius: 0;
 	border: none;
 	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   outline: none;
