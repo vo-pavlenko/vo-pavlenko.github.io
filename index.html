@@ -2,29 +2,92 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Glo-Kinopoisk</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>igtrip</title>
+		
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/header.css">
+
+
 </head>
-<body>
-	<nav class="navbar">
-		<div class="container">
-			<a href="index.html" class="navbar-brand">Glo-Kinopoisk</a>
+<body style="background-color: #303030;">
+	<header class="header">
+		<div class="header__logo">
+			<img src="img/logo.png" alt="logo" width="50px" height="50px">
 		</div>
-	</nav>
 
-	<div class="container">
-		<div class="jumbotron">
-			<h3 class="text-center">Поиск фильмов</h3>
-			<form id="search-form">
-				<input type="text" class="form-control" id="searchText" placeholder="Введите название...">
-			</form>
+		<div class="header__title">
+			<span>It`s a good trip!</span>
 		</div>
-	</div>
+		
+		<div class="header__menu__item_1">
+			<a href="#" class="menu__item">Публикации</a>
+		</div>
 
-	<div class="container">
-		<div id="movies" class="row"></div>
-	</div>
+		<div class="header__menu__item_2">
+			<a href="#" class="menu__item">Новости</a>
+		</div>
 
-	<script src="script.js"></script>
+		<div class="header__menu__item_3">
+			<a href="#" class="menu__item">Пользователи</a>
+		</div>
+
+		<div class="header__menu__item_4">
+			<a href="#" class="menu__item">Сообщества</a>
+		</div>
+
+		<div class="header__menu__item_5">
+			<a href="#" class="menu__item">События</a>
+		</div>
+
+		<div class="header__menu__item_6">
+			<a href="#" class="menu__item">Компании</a>
+		</div>
+
+		<div class="header__search">
+
+			<form action="test.php" method="post" class="form__search">
+		   <input class="form__search__input" type="search" name="q" placeholder="Поиск по сайту"> 
+		   <input type="image" class="form__search__submit" src="img/search.svg">
+		  </form>
+		</div>
+
+		<div class="header__theme">
+			<!-- Добавить смену значков темы в будущем -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.9)" d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79zM1 10.5h3v2H1zM11 .55h2V3.5h-2zm8.04 2.495l1.408 1.407-1.79 1.79-1.407-1.408zm-1.8 15.115l1.79 1.8 1.41-1.41-1.8-1.79zM20 10.5h3v2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-1 4h2v2.95h-2zm-7.45-.96l1.41 1.41 1.79-1.8-1.41-1.41z"/></svg>
+		</div>
+
+		<div class="header__lang">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.9)" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+		</div>
+
+		<div class="header__authorization">
+			<a href="#" class="button__authorization">Вход</a>
+		</div>
+
+		<div class="header__registration">
+			<a href="#" class="button__registration">Регистрация</a>
+		</div>
+
+		<div class="header__bmenu">
+			<a href="#" class="menu__item">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.9)" d="M2 17c0 .55.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1zm0-5c0 .55.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1zm0-5c0 .55.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1z"/></svg>
+			</a>
+		</div>
+	</header>
+		
+	<main>
+		
+	</main>
+<script src="js/search.js"></script>
+	<footer>
+		
+	</footer>
 </body>
 </html>

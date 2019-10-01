@@ -1,0 +1,230 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: rgba(255, 255, 255, 0.9);
+	font-family: 'Montserrat', cursive;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.header {
+	padding: 0 20px 0 20px;
+	display: grid;
+	grid-template-columns: 60px minmax(130px, 1fr) minmax(0, 45px) repeat(6, minmax(120px, 1fr)) minmax(150px, 2fr) repeat(2, 40px) minmax(70px, 1fr) minmax(135px, 1fr);
+	grid-template-areas: 
+	"logo title . item_1 item_2 item_3 item_4 item_5 item_6 search theme lang authorization registration";
+	-ms-align-items: center;
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	background-color: #212121;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	width: 100%;
+	height: 70px;
+	z-index: 100;
+}
+
+.header a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+}  
+
+.header a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.header .header__logo {
+	grid-area: logo;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header .header__title {
+	grid-area: title;
+	padding: 0 0 0 5px;
+}
+
+.header .header__menu__item_1 {
+	grid-area: item_1;
+}
+
+.header .header__menu__item_2 {
+	grid-area: item_2;
+}
+
+.header .header__menu__item_3 {
+	grid-area: item_3;
+}
+
+.header .header__menu__item_4 {
+	grid-area: item_4;
+}
+
+.header .header__menu__item_5 {
+	grid-area: item_5;
+}
+
+.header .header__menu__item_6 {
+	grid-area: item_6;
+}
+
+.header .header__search {
+	grid-area: search;
+}
+
+.form__search {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.form__search__input {
+	width: 120px;
+	padding: 4px 0 4px 4px;
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+	margin: 0 5px 0 0;
+}
+
+.header .header__theme {
+	grid-area: theme;
+}
+
+.header .header__lang {
+	grid-area: lang;
+}
+
+.header .header__authorization {
+	grid-area: authorization;
+}
+
+.header .header__registration {
+	grid-area: registration;
+	text-align: left;
+	margin: 0 5px 5px 0;
+}
+
+.header .header__bmenu {
+	grid-area: bmenu;
+	display: none;
+}
+
+.button__registration {
+	background-color: #f4a460;
+	border-radius: 5px;
+	padding: .5em .7em .5em .7em;
+}
+
+@media (max-width: 1400px) { 
+	.header {
+		padding: 5px 0 0 0;
+		grid-template-columns: 60px 130px minmax(0, 45px)  minmax(180px, 1fr) repeat(2, 60px) 70px 135px 60px;
+		grid-template-areas: 
+			"logo title . search theme lang authorization registration bmenu";
+		height: 60px;
+	}
+
+	.form__search__input {
+		width: 100%;
+		padding: 4px 0 4px 4px;
+		margin: 0 5px 0 20px;
+	}
+
+	.header .header__authorization {
+		text-align: center;
+	}
+
+	.header .header__registration {
+		text-align: center;
+	}
+
+	.header .header__bmenu {
+		display: block;
+	}
+
+	.header .header__menu__item_1, 
+	.header .header__menu__item_2, 
+	.header .header__menu__item_3, 
+	.header .header__menu__item_4, 
+	.header .header__menu__item_5, 
+	.header .header__menu__item_6 {
+		display: none;
+	}
+
+}
+
+@media (max-width: 839px) {
+	.header {
+		padding: 0 0 0 0;
+		grid-template-columns: 60px minmax(130px, 1fr) minmax(0, 50px) minmax(180px, 2fr) 60px;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+			"logo title . search bmenu";
+		height: 60px;
+	}
+	.header .header__logo {
+		padding: 0 0 0 0;
+	}
+	.header .header__logo img {
+		margin: 0 0 0 0;
+		width: 40px;
+		height: 40px;
+	}
+	.header .header__bmenu {
+		display: block;
+	}
+
+	.header .header__menu__item_1, 
+	.header .header__menu__item_2, 
+	.header .header__menu__item_3, 
+	.header .header__menu__item_4, 
+	.header .header__menu__item_5, 
+	.header .header__menu__item_6,
+	.header .header__theme,
+	.header .header__lang,
+	.header .header__authorization,
+	.header .header__registration {
+		display: none;
+	}
+
+}
+
+@media (max-width: 424px) {
+	.header {
+		padding: 0 0 0 0;
+		grid-template-columns: 60px 130px 1fr 60px;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+			"logo title . bmenu";
+		height: 60px;
+	}
+	.header .header__logo {
+		padding: 0 0 0 0;
+	}
+	.header .header__logo img {
+		margin: 0 0 0 0;
+		width: 40px;
+		height: 40px;
+	}
+	.header .header__bmenu {
+		display: block;
+	}
+
+	.header .header__menu__item_1, 
+	.header .header__menu__item_2, 
+	.header .header__menu__item_3, 
+	.header .header__menu__item_4, 
+	.header .header__menu__item_5, 
+	.header .header__menu__item_6,
+	.header .header__theme,
+	.header .header__lang,
+	.header .header__authorization,
+	.header .header__registration,
+	.header .header__search {
+		display: none;
+	}
+
+}
