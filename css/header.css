@@ -231,5 +231,11 @@
 }
 
 input {
-		-webkit-appearance: none;
+	-webkit-appearance: none;
+   box-shadow: none;
+   -webkit-box-shadow: none;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-appearance: none;
 }
