@@ -1,16 +1,8 @@
-* {
-	padding: 0;
-	margin: 0;
-	color: rgba(255, 255, 255, 0.9);
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-}
+
 
 .header {
-	padding: 0 20px 0 20px;
 	display: grid;
-	grid-template-columns: 60px minmax(130px, 1fr) minmax(0, 45px) repeat(6, minmax(120px, 1fr)) minmax(150px, 2fr) repeat(2, 40px) minmax(70px, 1fr) minmax(135px, 1fr);
+	grid-template-columns: 60px minmax(130px, 1fr) minmax(0, 45px) repeat(6, minmax(120px, 1fr)) minmax(160px, 2fr) repeat(2, 40px) minmax(70px, 1fr) minmax(135px, 1fr);
 	grid-template-areas: 
 	"logo title . item_1 item_2 item_3 item_4 item_5 item_6 search theme lang authorization registration";
 	-ms-align-items: center;
@@ -121,7 +113,6 @@
 
 @media (max-width: 1400px) { 
 	.header {
-		padding: 5px 0 0 0;
 		grid-template-columns: 60px 130px minmax(0, 45px)  minmax(180px, 1fr) repeat(2, 60px) 70px 135px 60px;
 		grid-template-areas: 
 			"logo title . search theme lang authorization registration bmenu";
