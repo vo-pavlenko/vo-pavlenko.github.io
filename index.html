@@ -21,6 +21,9 @@
 
 </head>
 <body style="background-color: #303030;">
+	<div id="preloader" class="preloader ">
+		<img class="animated flash" src="img/logo.png" alt="">
+	</div>
 	<header class="header">
 		<div class="header__logo">
 			<img src="img/logo.png" alt="logo" width="50px" height="50px">
@@ -248,5 +251,11 @@
 		
 	</footer>
 	<script src="js/search.js"></script>
+	<script>
+		function preloader() {
+			document.getElementById('preloader').style.display='none';
+		}
+		setTimeout(preloader, 3000);
+	</script>
 </body>
 </html>
