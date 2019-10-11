@@ -1,0 +1,31 @@
+body {
+	background-color: #2C2F3E;
+	color: rgba(255,255,255, .9);
+}
+
+a {
+	color: rgba(255,255,255, .9);
+}
+
+a:hover {
+	color: rgba(255,255,255, .6);
+}
+
+.dark_block {
+	background-color: #323546;
+}
+.dark_block_name {
+	background-color: #353A4E;
+}
+
+.dark_menu_active_item {
+	background-color: #3C3F50;
+}
+
+.text-tranperent {
+	color: rgba(255,255,255, .6);
+}
+
+.preloader {
+	background-color: #2C2F3E;
+}

@@ -1,2 +1,0 @@
-# Pavlenko Vsevolod
-# Мой сайт

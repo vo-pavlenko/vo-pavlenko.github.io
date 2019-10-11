@@ -1,261 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 	<title>igtrip</title>
-		
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/article.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=cyrillic" rel="stylesheet">
 
+	<style>
+		*{padding: 0;
+			margin: 0;
 
-
-</head>
-<body style="background-color: #303030;">
-	<div id="preloader" class="preloader ">
-		<img class="animated flash" src="img/logo.png" alt="">
-	</div>
-	<header class="header">
-		<div class="header__logo">
-			<img src="img/logo.png" alt="logo" width="50px" height="50px">
-		</div>
-
-		<div class="header__title">
-			<span>It`s a good trip!</span>
-		</div>
-		
-		<div class="header__menu__item_1">
-			<a href="#" class="menu__item">Публикации</a>
-		</div>
-
-		<div class="header__menu__item_2">
-			<a href="#" class="menu__item">Новости</a>
-		</div>
-
-		<div class="header__menu__item_3">
-			<a href="#" class="menu__item">Пользователи</a>
-		</div>
-
-		<div class="header__menu__item_4">
-			<a href="#" class="menu__item">Сообщества</a>
-		</div>
-
-		<div class="header__menu__item_5">
-			<a href="#" class="menu__item">События</a>
-		</div>
-
-		<div class="header__menu__item_6">
-			<a href="#" class="menu__item">Компании</a>
-		</div>
-
-		<div class="header__search">
-
-			<form action="test.php" method="post" class="form__search">
-		   <input class="form__search__input" type="search" name="q" placeholder="Поиск по сайту"> 
-		   <input type="image" class="form__search__submit" src="img/search.svg">
-		  </form>
-		</div>
-
-		<div class="header__theme">
-			<!-- Добавить смену значков темы в будущем -->
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.9)" d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79zM1 10.5h3v2H1zM11 .55h2V3.5h-2zm8.04 2.495l1.408 1.407-1.79 1.79-1.407-1.408zm-1.8 15.115l1.79 1.8 1.41-1.41-1.8-1.79zM20 10.5h3v2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-1 4h2v2.95h-2zm-7.45-.96l1.41 1.41 1.79-1.8-1.41-1.41z"/></svg>
-		</div>
-
-		<div class="header__lang">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.9)" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
-		</div>
-
-		<div class="header__authorization">
-			<a href="#" class="button__authorization">Вход</a>
-		</div>
-
-		<div class="header__registration">
-			<a href="#" class="button__registration">Регистрация</a>
-		</div>
-
-		<div class="header__bmenu">
-			<a href="#" class="menu__item">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.9)" d="M2 17c0 .55.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1zm0-5c0 .55.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1zm0-5c0 .55.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1H3c-.55 0-1 .45-1 1z"/></svg>
-			</a>
-		</div>
-	</header>
-		
-	<main>
-		<div class="main__left-block">
-			<div class="main__news">
-				<h3>Новости</h3>
-				<div class="news__atricle">
-					<a href="" class="news__a">«Средство индивидуальной мобильности», или fifty-five для электросамокатов</a>
-					<div class="additional">
-						<time datetime="01:50">01:50</time>
-
-						<div class="comments">
-							<a href="" class="comments__a">Коментарии: 5</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="news__atricle">
-					<a href="" class="news__a">ФБР признало, что иногда допустимо платить вымогателям за расшифровку данных</a>
-					<div class="additional">
-						<time datetime="01:50">01:50</time>
-						
-						<div class="comments">
-							<a href="" class="comments__a">Коментарии: 5</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="news__atricle">
-					<a href="" class="news__a">Суд Москвы рассматривает иск о запрете распознавания лиц городской системой видеонаблюдения</a>
-					<div class="additional">
-						<time datetime="01:50">01:50</time>
-						
-						<div class="comments">
-							<a href="" class="comments__a">Коментарии: 5</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="news__atricle">
-					<a href="" class="news__a">Данные 9 млн клиентов «Билайна» утекли в сеть</a>
-					<div class="additional">
-						<time datetime="01:50">01:50</time>
-						
-						<div class="comments">
-							<a href="" class="comments__a">Коментарии: 5</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="news__atricle">
-					<a href="" class="news__a">Новый экзоскелет дал возможность парализованному от плеч мужчине пройти 145 метров</a>
-					<div class="additional">
-						<time datetime="01:50">01:50</time>
-						
-						<div class="comments">
-							<a href="" class="comments__a">Коментарии: 5</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="main__articles">
-			<div class="articles__heading">
-				<button class="heading_button">
-					Все темы
-				</button>
-				<div class="heading__submenu">
-						<ul class="submenu_ul">
-							<li class="submenu__item">
-								<a href="" class="submenu_a">Транспорт</a>
-							</li>
-
-							<li class="submenu__item">
-								<a href="" class="submenu_a">Путешествия</a>
-							</li>
-
-							<li class="submenu__item">
-								<a href="" class="submenu_a">Аксессуары и экосистема</a>
-							</li>
-
-							<li class="submenu__item">
-								<a href="" class="submenu_a">Стиль жизни</a>
-							</li>
-
-							<li class="submenu__item">
-								<a href="" class="submenu_a">Ремонт и обслуживание</a>
-							</li>
-						</ul>
-				</div>
-				
-				<div class="articles__item">
-					<div class="article__name">
-						<h2>Как я проработала 3 месяца в Я.Маркете и уволилась</h2>
-					</div>
-					<div class="article__img">
-						<img src="https://placeimg.com/480/320/tech" alt="">
-					</div>
-					<div class="article__info">
-						<div class="author__foto">
-							<img src="https://placeimg.com/50/50/people" alt="author foto">
-						</div>
-
-						<div class="author__name">
-							Seva
-						</div>
-					
-						<div class="article__date">
-							<time datetime="07-10-2019 01:20">сегодня в 01:20</time>
-						</div>
-					</div>
-
-					<div class="article__statistics">
-						<div class="statistics__popularity">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.5)" d="M7 12c0 .55.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1zm5-10C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-							
-							<span>0</span>
-							
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.5)" d="M12 7c-.55 0-1 .45-1 1v3H8c-.55 0-1 .45-1 1s.45 1 1 1h3v3c0 .55.45 1 1 1s1-.45 1-1v-3h3c.55 0 1-.45 1-1s-.45-1-1-1h-3V8c0-.55-.45-1-1-1zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-						</div>
-
-						<div class="statistics__bookmarks">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="rgba(255, 255, 255, 0.5)" d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
-							<span>32</span>
-						</div>
-						
-						<div class="statistics__comments">
-							Комментарии:
-							<span>13</span>
-						</div>
-					</div>
-
-					<div class="article__tags">
-						<span>Теги: </span>
-						<a href="" class="article__tags_a">Судьба</a>, <a href="" class="article__tags_a">Магазины</a>, <a href="" class="article__tags_a">Работа</a>
-					</div>
-
-					<div class="article__description">
-						<p>Все началось с того, что я люблю ходить по конференциям и частенько хожу на них в Яндекс, Mail.ru и другие крупные компании. Однажды мне написал HR из Яндекса и попросила сделать тестовое на стажера фронтенд разработчика.
-
-Я его сделала, вот оно. По условию оно должно было работать на айфонах и андроидах, поэтому я проверила его в Browser Stack и дописала пару префиксов и css стилей.
-
-Через какое-то время и поняла, что не хочу быть стажером, имея несколько лет опыта за плечами и зааплаилась в Я.Маркет через форму на их сайте.
-
-Мне позвонила HR и предложила пройти скайп интервью с лайвкодингом. Перед собеседованием я повторила структуры данных, сложность алгоритмов, сортировки. Тогда я еще не знала, что этого недостаточно.
-
-На интервью я не смогла решить алгоритмические задачки, не знала внутренности JS и меня сбрили.
-
-Это задело мою самооценку и весь следующий год параллельно с работой я учила JS на глубоком уровне и решала задачки на codewars. Здесь можно оценить мой прогресс.</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div class="main__right-block">
-			<div class="main__sponsors">Тут спонсоры</div>
-			<div class="main__friends">Тут друзья</div>
-		</div>
-	</main>
-	<footer>
-		
-	</footer>
-	<script src="js/search.js"></script>
-	<script>
-		function preloader() {
-			document.getElementById('preloader').style.display='none';
+			font-family: 'Comfortaa', cursive;
+	font-size: 16px;
+	font-weight: 400;
 		}
-		setTimeout(preloader, 3000);
-	</script>
+		img {
+			display: inline-block;
+			border-radius: 50%;
+						margin: 16px;
+		}
+		.flex, .link {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			justify-content: center;
+
+		}
+
+	</style>
+</head>
+<body style="min-height:100vh;">
+	<div class="dark flex" height="50vh" style="background-color: #2C2F3E; text-align: center; color: rgba(255,255,255, .9);">
+		<a href="dark.html" class="link" style="text-decoration: none; color: rgba(255,255,255, .9);">
+			<img src="img/logo.jpg" alt="" width="80px">Переходи на темную сторону
+		</a>
+		У нас есть печеньки :)
+	</div>
+
+	<div class="light flex" height="50vh" style="background-color: #F5F7F9; text-align: center; color: rgba(80,90,104, .9);">
+		<a href="light.html" class="link" style="text-decoration: none; color: rgba(80,90,104, .9);">
+			<img src="img/logo_light.png" alt="" width="80px">Переходи на светлую сторону
+		</a>
+	</div>
+
 </body>
 </html>
